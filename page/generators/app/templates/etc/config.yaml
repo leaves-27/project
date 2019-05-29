@@ -1,0 +1,8 @@
+config:
+  port : 5000
+  srcPath : "./src"
+  buildPath : "../build/"
+  isConCat : false
+  staticPrefix : "./"
+  domainPath : "res.test.com"
+  host : "localhost"

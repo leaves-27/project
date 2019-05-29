@@ -1,0 +1,23 @@
+{
+  "name": "new",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "dong.keke <dong.keke@tongbanjie.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery-validation": "~1.15.0",
+    "jquery": "~2.2.1"
+  }
+}

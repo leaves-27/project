@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    #set($currentPage="login")
+    #include("commponent/static.vm")
+    <title>报名</title>
+    <link rel="stylesheet" type="text/css" href="./page/login/index.css">
+  </head>
+  <body>
+    <div class="login flex-cont">
+      <form class="dialog">
+        <fieldset class="clearfix">
+          <label>姓名</label>
+          <input maxLength="7" name="name" type="text" />
+        </fieldset>
+        <fieldset class="clearfix">
+          <label>手机号</label>
+          <input name="phone" type="text" maxLength="11" />
+        </fieldset>
+        <fieldset id="error-message" class="error">
+          
+        </fieldset>
+        <fieldset>
+          <button id="free-btn" class="btn" type="submit">免费报名</button>
+          <p class="extral">凭报名手机号参与购车优惠</p>
+        </fieldset>
+      </form>
+      <div class="footer">
+        <p class="extral">
+          <span>━━</span>
+          <span>浙江信天下汽车</span>
+          <span>━━</span>
+        </p>
+        <p>微信公众号:信天下车生活</p>
+        <p>衢州浙西汽车城(康达汽车2楼展厅)</p>
+      </div>
+    </div>
+    ## <div class="landscape-message">
+    ##   <p>请竖屏浏览</p>
+    ## </div>
+    <script type="text/javascript" src="./page/login/login.js"></script>
+  </body>
+</html>

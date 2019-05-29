@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    #set($currentPage='index')
+    #include("commponent/static.vm")
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="./page/index/index.css">
+  </head>
+  <body>
+    <div class="container main">
+      <h1>
+        <img src="./imgs/header.jpg" />
+      </h1>
+      <ul>
+        <li>
+          <h2>
+            <p>
+              <span>塞纳</span>
+              <span>Sienna</span>
+            </p>
+            <p>
+              售价<span>40.88</span>万起
+            </p>
+          </h2>
+          <p>
+            <img src="./imgs/pic_01.jpg" />
+          </p>
+        </li>
+        <li>
+          <h2>
+            <p>
+              <span>塞纳</span>
+              <span>Sienna</span>
+            </p>
+            <p>
+              售价<span>40.88</span>万起
+            </p>
+          </h2>
+          <p>
+            <img src="./imgs/pic_01.jpg" />
+          </p>
+        </li>
+        <li>
+          <h2>
+            <p>
+              <span>塞纳</span>
+              <span>Sienna</span>
+            </p>
+            <p>
+              售价<span>40.88</span>万起
+            </p>
+          </h2>
+          <p>
+            <img src="./imgs/pic_01.jpg" />
+          </p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

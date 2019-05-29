@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>新农都</title>
+    <script type="text/javascript" src="./bundle.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="frame">
+        <img class="logo" src="./imgs/logo.png" />
+        <form id="login" class="form">
+          <fieldset>
+            <input name="username" type="text" maxlength="10" placeholder="用户名" />
+          </fieldset>
+          <fieldset>
+            <input name="password" type="password" maxlength="6" placeholder="密码" />
+          </fieldset>
+          <fieldset class="validation-code-frame">
+            <input name="validatecode" maxlength="4" class="valid-code-input" type="text" placeholder="验证码" />
+            <img id="valid-code-picture" class="valid-code-picture" src="./imgs/validatecode.jpg" /> <a id="valid-code-picture-a" href="javascript:void(0)">看不清</a>
+          </fieldset>
+          <fieldset class="button-frame">
+            <div id="error-tip" class="error-tip"></div>
+            <button>登录</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

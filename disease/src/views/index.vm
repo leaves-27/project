@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    #set($currentPage='index')
+    #parse("commponent/static.vm")
+    <title>首页</title>
+    #include("commponent/list.vm")
+  </head>
+  <body>
+    #parse("commponent/header.vm")
+    <div class="container main">
+      <h1 class="text-center">长期伏案工作人员职业病一览表</h1>
+      <p style="margin:50px 0 20px;font-weight:bold">
+        你是程序员吗？你是整天在办公室坐着的吗？如果你是这些中的一个，你可能患有以下办公室病或有患此类病的可能，要留神了，具体请往下看。
+      </p>
+      <div id="list-el"></div>
+    </div>
+    <script type="text/javascript" src="./page/index/mock.js"></script>
+    <script type="text/javascript" src="./page/index/index.js"></script>
+  </body>
+</html>

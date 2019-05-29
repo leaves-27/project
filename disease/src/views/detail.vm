@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    #set($currentPage='detail')
+    #parse("commponent/static.vm")
+    <title>首页</title>
+  </head>
+  <body>
+    #parse("commponent/header.vm")
+    <div class="container main">
+      <div>
+        <h1>名称</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>缓解方法</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>症状</h1>
+        <p></p>
+      </div>
+      <div>
+        <h1>更多链接</h1>
+        <ul>
+          <li>
+            <a href=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript" src="./page/index/mock.js"></script>
+    <script type="text/javascript" src="./page/index/index.js"></script>
+  </body>
+</html>

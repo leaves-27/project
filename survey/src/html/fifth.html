@@ -1,0 +1,15 @@
+<section class="section other">
+    <h2 class="title">{{template.question}}</h2>
+    <textarea placeholder="想吐槽还是想赞都可以写在这" ng-model="template.advice" maxlength="500"></textarea><br />
+    <input class="contact" type="text"  placeholder="手机、邮箱、QQ等联系方式" maxlength="50" ng-model="template.contact" />
+    <p class="note">欢迎留下联系方式,以便及时给您回复</p>
+    <div class="btnFrame">
+        <a id="backBtn" class="button wh36 prevBtn" ng-click="backPrev()" href="javascript:void(0);">上一题</a>
+        <a id="nextBtn" class="button wh60"  ng-click="showNext('question06')" href="javascript:void(0);">提交</a>
+    </div>
+    <div class="paging">
+        <span>5</span>
+        <span>/</span>
+        <span>5</span>
+    </div>
+</section>

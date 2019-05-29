@@ -1,0 +1,12 @@
+<section class="section phoneBrand">
+    <div class="paging">
+      <span>1</span>
+      <span>/</span>
+      <span>3</span>
+    </div>
+    <h2 class="title">{{template.question}}</h2>
+    <div id="phoneType">
+        <p class="phone" ng-repeat="answer in template.answers" ng-click="answer.isSelectedHanlder(answer.id)" ng-class="{active:answer.isSelected}">{{answer.text}}</p>
+    </div>
+    <a id="btn" class="button wh" ng-class="{selected:inputVerifi()}" ng-click="goNext('question02')">下一题</a>
+</section>

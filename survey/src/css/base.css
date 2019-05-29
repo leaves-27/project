@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*通用的重置设置
+--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {margin: 0;padding: 0;}
+input[type=subimt],input[type=button]{-webkit-appearance: none;}/*去掉input元素的默认皮肤*/
+h1, h2, h3, h4, h5, h6 {font-size: 100%;}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+ul, ol { list-style: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+body{margin:0 auto;text-align:center;}
+a{text-decoration:none;}
+img{vertical-align:top;}
+
+/*通用的常用设置
+------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.clearfix:after{content: " ";display: block;height: 0;clear: both;}
+.clearfix {zoom: 1;}
+
+/*针对手机浏览器的一些重置设置
+------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body{-webkit-text-size-adjust:none;text-size-adjust:none;font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;}/*设置默认字体采用手机系统字体*/
+a, img {-webkit-touch-callout: none;}/*取消选中弹出菜单*/
+html, body {-webkit-user-select: none;user-select: none;}/*设置用户是否可以选择元素内容。选择性采用*/
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance: none;margin: 0;} /*取消input type="number"的右边箭头*/
+body{-webkit-tap-highlight-color:rgba(0,0,0,0);}/*去掉选中文本时，文本的高亮*/
+
+/*根据特定需求定制的全局设置
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body{background-color: #feffef;color:#434343;}
+text,input{color:#434343;}
+input::-webkit-input-placeholder{background-color:transparent;}/*修改input 元素的placeholder的颜色*/
+

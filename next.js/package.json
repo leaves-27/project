@@ -1,0 +1,32 @@
+{
+  "name": "next.js",
+  "version": "1.0.0",
+  "description": "next.js中文版学习",
+  "main": "index.js",
+  "scripts": {
+    "dev1": "next",
+    "build": "next build",
+    "start": "next start",
+    "dev": "node ./server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
+    "jquery": "^3.2.1",
+    "next": "^2.4.0",
+    "next-redux-wrapper": "^1.1.2",
+    "rc-queue-anim": "^1.0.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "redux": "^3.6.0",
+    "redux-convenient-utils": "^1.0.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^2.1.0"
+  }
+}

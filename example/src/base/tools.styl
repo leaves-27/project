@@ -1,0 +1,58 @@
+/*stylus官网:http://learnboost.github.io/stylus*/
+
+/*设置元素的形体：包括类型、大小、外边距、内边距、是否浮动、行高、字体大小等*/
+setModel(type=false,wh=false,ht=false,margin=false,padding=false,float=false,lht=false,fontSize=false,border=false,boxShadow=false)
+  if type
+    display type
+  if wh
+    width wh
+  if ht
+    height ht
+    line-height ht
+  if margin
+    margin margin
+  if padding
+    padding padding
+  if float
+    float float
+  if lht
+    line-height lht
+  if fontSize
+    font-size fontSize
+  if border
+    border border
+  if boxShadow
+    -webkit-box-shadow boxShadow
+    -moz-box-shadow boxShadow
+    -ms-box-shadow boxShadow
+    box-shadow boxShadow 
+ 
+/*设置元素的皮肤及对齐方式*/
+setStylus(backgroundColor=false,color=false,textAlign=false,verticalAlign=false,fontWeight=false)
+  if backgroundColor
+    background-color backgroundColor
+  if color
+    color color
+  if textAlign
+    text-align textAlign
+  if verticalAlign
+    vertical-align verticalAlign
+  if fontWeight
+    font-weight fontWeight
+    
+/*设置元素位置*/
+setPosition(type=relative,left=0px,top=0px,right=false)
+  if left
+    left left
+  if right
+    right right
+    
+  position type
+  top top
+  
+setBackground(url,left = center,right = center,isRepeat = no-repeat,size = contain)
+  background-image  url(url)
+  background-position left right 
+  background-repeat isRepeat
+  background-size size
+    

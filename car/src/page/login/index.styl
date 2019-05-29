@@ -1,0 +1,47 @@
+html,body,.login{width:100%;height:100%;}
+
+font_size_big = 15px
+font_size_middle = 12px
+font_size_middle_small = 11px
+font_size_small = 9px
+line_height18 = 26px
+
+.login{
+  position:relative;
+  background-size : contain;
+  background-color : #000;
+  background-image : url("../../imgs/bg_top.jpg"),
+               url("../../imgs/bg_bottom.jpg");
+  background-repeat: no-repeat, 
+                     no-repeat;
+                     
+  background-position : center top,
+                        center bottom;
+                        
+  
+  justify-content:center;
+  align-items:center;
+}
+
+.dialog{width:78%;margin-top:78px;}
+.dialog label{height:line_height18;line-height:line_height18;width:21%;padding:0 2px;float:left;color:rgba(255,255,255,1);text-align:left;font-size:font_size_big;border:1px solid transparent;}
+.dialog input{padding:2px 0px;font-size:font_size_big;text-indent:6px;width:74%;float:right;color:rgba(255,255,255,1);text-align:left;font-size:font_size_middle;border:1px solid #808080;background-color:transparent;height:line_height18;line-height:line_height18;}
+.dialog fieldset:nth-child(1){margin-bottom:13px;}
+
+.error{color:#fff;margin-top:10px;margin-bottom:7px;text-align:center;font-size:10px;}
+.extral{text-align:center;font-size:font_size_middle_small;color:rgba(255,255,255,1);margin-top:16px;}
+.btn{cursor:pointer;width:100%;height: 35px;line-height:35px;border-radius:2px;padding:0;background-color:#bf0000;border:1px solid #bf0000;color:#fff;text-align:center;font-size:font_size_big;}
+.footer{width:100%;padding:13px 0 4px;position:absolute;left:0;bottom:0;}
+.footer p:nth-child(1){text-align: center;font-size:font_size_middle_small;color:rgba(255,255,255,1);margin-bottom: 7px;}
+.footer p:nth-child(2){text-align: center;font-size:font_size_middle_small;color:rgba(255,255,255,1);margin-bottom: 4px;}
+.footer p:nth-child(3){text-align: center;font-size:font_size_small;color:rgba(255,255,255,0.5);}
+
+// @media all and (orientation : landscape) { 
+//   .login{display:none;}
+//   .landscape-message{display:block;background-color:#000;width:100%;height:100%;}
+//   .landscape-message p{vertical-align:middle;padding-top:130px;justify-content:center;align-items:center;text-align:center;color:#fff;font-size:24px;}
+// } 
+
+// @media all and (orientation : portrait){
+//   .landscape-message{display:none;}
+// } 

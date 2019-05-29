@@ -1,0 +1,9 @@
+config:
+  port : 8080
+  srcPath : "./src"
+  buildPath : "./build/"
+  isConCat : false
+  staticPrefix : "./survey/"
+  domainPath : "./survey/"
+  iconFontPath : "../imgs/iconfont/"
+  host : "localhost"

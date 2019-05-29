@@ -1,0 +1,22 @@
+<script id="list" type="x-template">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>名称</th>
+        <th>缓解方法</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="item in content">
+        <td>{{ item.name }}</td>
+        <td>
+          <p v-for="subItem in item.methods"> {{ subItem }} </p>
+        </td>
+        <td class="text-center">
+          <button type="button" class="btn btn-success" v-bind:data-id="item.id"  data-toggle="tooltip" data-placement="top" data-title="敬请期待..."> 详情</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</script>

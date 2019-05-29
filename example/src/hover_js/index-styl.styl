@@ -1,0 +1,124 @@
+body
+  background #f2f2f2
+.detail 
+  box-shadowfn(0 0 5px rgba(0,0,0,0.2))
+  padding 0px 35px 20px 35px
+  margin-top 20px
+  h4
+    font-size 16px
+    color #F87121
+    border-bottom 1px solid #F2F2F2
+    text-align center
+    height 60px
+    line-height 60px
+.totalEarning
+  text-align center
+  padding 20px 0 20px 
+  box-shadowfn(0 0 5px rgba(0,0,0,0.2))
+  span
+    color #999
+    font-size 14px
+    em
+      color #ccc
+      font-size 12px
+  .val
+    color #EA4C37
+    font-size 48px
+    margin-top 10px
+    line-height 54px
+.item
+  position relative
+  left 0
+  top 0
+  background #F2F2F2
+  .itemGeneral
+    border-bottom 1px solid #F2F2F2
+    padding 16px 0
+    overflow hidden
+    position relative
+    left 0
+    top 0
+    em
+      color #666666
+      font-size 14px
+      font-weight normal
+      float left
+    a 
+      float right
+      font-size 12px
+      color #999
+      cursor default
+      &:after
+        content "x"
+        asset-iconfontfn()
+        width 22px
+        height 22px
+        color #3093DE
+        margin-left 5px
+    &.itemTitle
+        em,strong,a
+          color #999999
+          font-size 12px
+        a 
+          &:after
+            content "x"
+  .itemDetail
+    display none
+    width 300px
+    position absolute
+    right -15px
+    top 3px
+    z-index 100000
+    background #fff
+    font-size 12px
+    box-shadowfn(0 0 5px rgba(0,0,0,0.2))
+    .subItemCont
+      overflow-y auto
+      max-height 150px
+      width 100%
+    .subItemMenu
+      padding 13px 15px
+      color #ccc
+      font-size 12px
+      text-align right
+      &:after
+        content "\e60d"
+        asset-iconfontfn()
+        width 22px
+        height 22px
+        color #ccc
+        margin-left 10px
+    .subItemTitle
+      padding 10px 15px
+      background #F8F8F8
+      color #999
+      overflow hidden
+      em
+        float left
+        font-weight normal
+      strong
+        float right
+        font-weight normal
+    .subItem
+      color #999
+      font-size 12px
+      padding 10px 15px
+      overflow hidden
+      position relative
+      left 0
+      top 0
+      em
+        font-weight normal
+        float left
+      strong
+        font-weight normal
+        float right
+        text-align right
+    .mouseTarget
+      width 100%
+      height 100% 
+      display none
+      position absolute
+      left 0
+      top 0
+      z-index 1

@@ -1,0 +1,15 @@
+<section class="section interfaceDesi">
+    <div class="paging">
+      <span>2</span>
+      <span>/</span>
+      <span>3</span>
+    </div>
+    <h2 class="title">{{template.question}}</h2>
+    <div id="phoneType" class="clearfix">
+        <p class="phone whhalf fl" ng-repeat="answer in template.answers" ng-click="answer.isSelectedHanlder(answer.id)" ng-class="{active:answer.isSelected,fr:$odd,whAll: answer.text == '无',textCenter:answer.text == '无',disabled:answer.disabled}" ng-bind-html = "answer.text">{{answer.text}}</p>
+    </div>
+    <div class="btnFrame">
+        <a id="nextBtn" class="button" ng-class="{selected:inputVerifi()}" href="javascript:void(0);" ng-click="goNext('question03')">下一题</a>
+        <p class="whAll back"><span ng-click="goBack()">返回上一题</span></p>
+    </div>
+</section>

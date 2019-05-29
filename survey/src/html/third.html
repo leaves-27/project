@@ -1,0 +1,16 @@
+<section class="section other">
+    <div class="paging">
+        <span>3</span>
+        <span>/</span>
+        <span>3</span>
+    </div>
+    <h2 class="title">{{template.question}}</h2>
+    <textarea placeholder="我们希望听到您的声音" ng-model="template.advice" maxlength="500"></textarea><br />
+    <p class="note">您可以留下联系方式，以便于我们对您进行回访。（可不填）</p>
+    <input class="contact" type="text"  placeholder="手机、QQ、邮箱" maxlength="50" ng-model="template.contact" />
+    <div class="btnFrame">
+        <!-- <a id="backBtn" class="button wh36 prevBtn" ng-click="backPrev()" href="javascript:void(0);">上一题</a> -->
+        <a id="nextBtn" class="button selected" ng-click="goNext('question04')" href="javascript:void(0);">提交</a>
+        <p class="whAll back"><span ng-click="goBack()">返回上一题</span></p>
+    </div>
+</section>

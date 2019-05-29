@@ -1,0 +1,15 @@
+<section class="section tip">
+    <h2 class="title">{{template.question}}</h2>
+    <div id="phoneType">
+        <p class="phone" ng-class="{active:answer.isSelected,last:$index%2 != 0}"  ng-repeat="answer in template.answers" ng-click="answer.isSelectedHanlder(answer.id)">{{answer.text}}</p>
+    </div>
+    <div class="btnFrame">
+        <a id="backBtn" class="button wh36 prevBtn" ng-click="backPrev()" href="javascript:void(0);">上一题</a>
+        <a id="nextBtn" class="button wh60 unselect" ng-class="{selected:inputVerifi()}" ng-click="showNext('question05')" href="javascript:void(0);">下一题</a>
+    </div>
+    <div class="paging">
+        <span>4</span>
+        <span>/</span>
+        <span>5</span>
+    </div>
+</section>
